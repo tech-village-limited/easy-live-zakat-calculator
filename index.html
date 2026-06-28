@@ -166,17 +166,15 @@
   </section>
 
   <section class="card">
-    <h2>4. Third-Party API Calls</h2>
-    <p>The app makes network requests to the following free, public APIs to fetch live gold and silver prices and currency exchange rates:</p>
-    <table>
-      <thead><tr><th>Service</th><th>Endpoint</th><th>Data Sent</th></tr></thead>
-      <tbody>
-        <tr><td>Coinbase (primary)</td><td><code>api.coinbase.com</code></td><td>None (GET request)</td></tr>
-        <tr><td>gold-api.com (fallback)</td><td><code>api.gold-api.com</code></td><td>None (GET request)</td></tr>
-        <tr><td>ExchangeRate-API (FX)</td><td><code>open.er-api.com</code></td><td>None (GET request)</td></tr>
-      </tbody>
-    </table>
-    <p>These requests contain <strong>no personal data</strong>. Standard HTTP request metadata (IP address, user-agent) may be logged by these third-party services under their own privacy policies.</p>
+    <h2>4. Network Requests</h2>
+    <p>To display live gold and silver prices in your selected currency, the app makes anonymous HTTPS requests to third-party public market-data and currency-rate providers.</p>
+    <p>These requests:</p>
+    <ul>
+      <li>Contain <strong>no personal data</strong>, no account information, and no wealth figures from your inputs.</li>
+      <li>Consist only of generic price lookups (e.g. "current gold spot price").</li>
+      <li>May include standard HTTP metadata (your IP address and device user-agent), which is handled by the third-party service under its own privacy policy.</li>
+    </ul>
+    <p>If a provider is temporarily unavailable, the app falls back to its locally cached values. You can also disable live prices entirely by enabling <em>Manual Mode</em> in the Prices screen.</p>
   </section>
 
   <section class="card">
@@ -229,7 +227,7 @@
     <h2>11. Contact</h2>
     <p>If you have questions about this Privacy Policy, please contact:</p>
     <p>
-      <strong>Email:</strong> <a href="tech.village.limited@gmail.com">tech.village.limited@gmail.com</a><br>
+      <strong>Email:</strong> <a href="mailto:tech.village.limited@gmail.com">tech.village.limited@gmail.com</a><br>
       <strong>Developer:</strong> Tech Village Limited
     </p>
   </section>
